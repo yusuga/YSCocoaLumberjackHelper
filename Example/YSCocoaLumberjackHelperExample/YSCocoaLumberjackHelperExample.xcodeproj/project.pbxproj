@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA15A3E136E4857BBEE70FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42721F9718F24AF5A1C0D962 /* libPods.a */; };
+		B89204E119A594B3005EE9A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204E019A594B3005EE9A5 /* Foundation.framework */; };
+		B89204E319A594B3005EE9A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204E219A594B3005EE9A5 /* CoreGraphics.framework */; };
+		B89204E519A594B3005EE9A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204E419A594B3005EE9A5 /* UIKit.framework */; };
+		B89204EB19A594B3005EE9A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B89204E919A594B3005EE9A5 /* InfoPlist.strings */; };
+		B89204ED19A594B3005EE9A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B89204EC19A594B3005EE9A5 /* main.m */; };
+		B89204F119A594B3005EE9A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B89204F019A594B3005EE9A5 /* AppDelegate.m */; };
+		B89204F419A594B3005EE9A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89204F219A594B3005EE9A5 /* Main.storyboard */; };
+		B89204F719A594B3005EE9A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89204F619A594B3005EE9A5 /* ViewController.m */; };
+		B89204F919A594B3005EE9A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89204F819A594B3005EE9A5 /* Images.xcassets */; };
+		B892050019A594B3005EE9A5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204FF19A594B3005EE9A5 /* XCTest.framework */; };
+		B892050119A594B3005EE9A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204E019A594B3005EE9A5 /* Foundation.framework */; };
+		B892050219A594B3005EE9A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89204E419A594B3005EE9A5 /* UIKit.framework */; };
+		B892050A19A594B3005EE9A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B892050819A594B3005EE9A5 /* InfoPlist.strings */; };
+		B892050C19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B892050B19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m */; };
+		B892051819A59613005EE9A5 /* YSCocoaLumberjackHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B892051719A59613005EE9A5 /* YSCocoaLumberjackHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B892050319A594B3005EE9A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B89204D519A594B3005EE9A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B89204DC19A594B3005EE9A5;
+			remoteInfo = YSCocoaLumberjackHelperExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42721F9718F24AF5A1C0D962 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E53D3FF15184C5F8DA6B709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B89204DD19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSCocoaLumberjackHelperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89204E019A594B3005EE9A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B89204E219A594B3005EE9A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B89204E419A594B3005EE9A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B89204E819A594B3005EE9A5 /* YSCocoaLumberjackHelperExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSCocoaLumberjackHelperExample-Info.plist"; sourceTree = "<group>"; };
+		B89204EA19A594B3005EE9A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B89204EC19A594B3005EE9A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B89204EE19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSCocoaLumberjackHelperExample-Prefix.pch"; sourceTree = "<group>"; };
+		B89204EF19A594B3005EE9A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B89204F019A594B3005EE9A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B89204F319A594B3005EE9A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B89204F519A594B3005EE9A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B89204F619A594B3005EE9A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B89204F819A594B3005EE9A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B89204FE19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSCocoaLumberjackHelperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89204FF19A594B3005EE9A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B892050719A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSCocoaLumberjackHelperExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B892050919A594B3005EE9A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B892050B19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSCocoaLumberjackHelperExampleTests.m; sourceTree = "<group>"; };
+		B892051619A59613005EE9A5 /* YSCocoaLumberjackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCocoaLumberjackHelper.h; sourceTree = "<group>"; };
+		B892051719A59613005EE9A5 /* YSCocoaLumberjackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCocoaLumberjackHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89204DA19A594B3005EE9A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89204E319A594B3005EE9A5 /* CoreGraphics.framework in Frameworks */,
+				B89204E519A594B3005EE9A5 /* UIKit.framework in Frameworks */,
+				B89204E119A594B3005EE9A5 /* Foundation.framework in Frameworks */,
+				0AA15A3E136E4857BBEE70FF /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89204FB19A594B3005EE9A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B892050019A594B3005EE9A5 /* XCTest.framework in Frameworks */,
+				B892050219A594B3005EE9A5 /* UIKit.framework in Frameworks */,
+				B892050119A594B3005EE9A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B89204D419A594B3005EE9A5 = {
+			isa = PBXGroup;
+			children = (
+				B89204E619A594B3005EE9A5 /* YSCocoaLumberjackHelperExample */,
+				B892051519A59607005EE9A5 /* YSCocoaLumberjackHelper */,
+				B892050519A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests */,
+				B89204DF19A594B3005EE9A5 /* Frameworks */,
+				B89204DE19A594B3005EE9A5 /* Products */,
+				9E53D3FF15184C5F8DA6B709 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B89204DE19A594B3005EE9A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89204DD19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample.app */,
+				B89204FE19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89204DF19A594B3005EE9A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89204E019A594B3005EE9A5 /* Foundation.framework */,
+				B89204E219A594B3005EE9A5 /* CoreGraphics.framework */,
+				B89204E419A594B3005EE9A5 /* UIKit.framework */,
+				B89204FF19A594B3005EE9A5 /* XCTest.framework */,
+				42721F9718F24AF5A1C0D962 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B89204E619A594B3005EE9A5 /* YSCocoaLumberjackHelperExample */ = {
+			isa = PBXGroup;
+			children = (
+				B89204EF19A594B3005EE9A5 /* AppDelegate.h */,
+				B89204F019A594B3005EE9A5 /* AppDelegate.m */,
+				B89204F219A594B3005EE9A5 /* Main.storyboard */,
+				B89204F519A594B3005EE9A5 /* ViewController.h */,
+				B89204F619A594B3005EE9A5 /* ViewController.m */,
+				B89204F819A594B3005EE9A5 /* Images.xcassets */,
+				B89204E719A594B3005EE9A5 /* Supporting Files */,
+			);
+			path = YSCocoaLumberjackHelperExample;
+			sourceTree = "<group>";
+		};
+		B89204E719A594B3005EE9A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B89204E819A594B3005EE9A5 /* YSCocoaLumberjackHelperExample-Info.plist */,
+				B89204E919A594B3005EE9A5 /* InfoPlist.strings */,
+				B89204EC19A594B3005EE9A5 /* main.m */,
+				B89204EE19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B892050519A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B892050B19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m */,
+				B892050619A594B3005EE9A5 /* Supporting Files */,
+			);
+			path = YSCocoaLumberjackHelperExampleTests;
+			sourceTree = "<group>";
+		};
+		B892050619A594B3005EE9A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B892050719A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests-Info.plist */,
+				B892050819A594B3005EE9A5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B892051519A59607005EE9A5 /* YSCocoaLumberjackHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B892051619A59613005EE9A5 /* YSCocoaLumberjackHelper.h */,
+				B892051719A59613005EE9A5 /* YSCocoaLumberjackHelper.m */,
+			);
+			name = YSCocoaLumberjackHelper;
+			path = ../../Classes/YSCocoaLumberjackHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B89204DC19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B892050F19A594B3005EE9A5 /* Build configuration list for PBXNativeTarget "YSCocoaLumberjackHelperExample" */;
+			buildPhases = (
+				8F70A26F9C024E249EED2476 /* Check Pods Manifest.lock */,
+				B89204D919A594B3005EE9A5 /* Sources */,
+				B89204DA19A594B3005EE9A5 /* Frameworks */,
+				B89204DB19A594B3005EE9A5 /* Resources */,
+				7F5232C961814D3AA0C40CE3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSCocoaLumberjackHelperExample;
+			productName = YSCocoaLumberjackHelperExample;
+			productReference = B89204DD19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B89204FD19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B892051219A594B3005EE9A5 /* Build configuration list for PBXNativeTarget "YSCocoaLumberjackHelperExampleTests" */;
+			buildPhases = (
+				B89204FA19A594B3005EE9A5 /* Sources */,
+				B89204FB19A594B3005EE9A5 /* Frameworks */,
+				B89204FC19A594B3005EE9A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B892050419A594B3005EE9A5 /* PBXTargetDependency */,
+			);
+			name = YSCocoaLumberjackHelperExampleTests;
+			productName = YSCocoaLumberjackHelperExampleTests;
+			productReference = B89204FE19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89204D519A594B3005EE9A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yu Sugawara";
+				TargetAttributes = {
+					B89204FD19A594B3005EE9A5 = {
+						TestTargetID = B89204DC19A594B3005EE9A5;
+					};
+				};
+			};
+			buildConfigurationList = B89204D819A594B3005EE9A5 /* Build configuration list for PBXProject "YSCocoaLumberjackHelperExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B89204D419A594B3005EE9A5;
+			productRefGroup = B89204DE19A594B3005EE9A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B89204DC19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample */,
+				B89204FD19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B89204DB19A594B3005EE9A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89204F919A594B3005EE9A5 /* Images.xcassets in Resources */,
+				B89204EB19A594B3005EE9A5 /* InfoPlist.strings in Resources */,
+				B89204F419A594B3005EE9A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89204FC19A594B3005EE9A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B892050A19A594B3005EE9A5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F5232C961814D3AA0C40CE3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F70A26F9C024E249EED2476 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B89204D919A594B3005EE9A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89204F719A594B3005EE9A5 /* ViewController.m in Sources */,
+				B892051819A59613005EE9A5 /* YSCocoaLumberjackHelper.m in Sources */,
+				B89204F119A594B3005EE9A5 /* AppDelegate.m in Sources */,
+				B89204ED19A594B3005EE9A5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89204FA19A594B3005EE9A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B892050C19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B892050419A594B3005EE9A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B89204DC19A594B3005EE9A5 /* YSCocoaLumberjackHelperExample */;
+			targetProxy = B892050319A594B3005EE9A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B89204E919A594B3005EE9A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89204EA19A594B3005EE9A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B89204F219A594B3005EE9A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89204F319A594B3005EE9A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B892050819A594B3005EE9A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B892050919A594B3005EE9A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B892050D19A594B3005EE9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B892050E19A594B3005EE9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B892051019A594B3005EE9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E53D3FF15184C5F8DA6B709 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Prefix.pch";
+				INFOPLIST_FILE = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B892051119A594B3005EE9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E53D3FF15184C5F8DA6B709 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Prefix.pch";
+				INFOPLIST_FILE = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B892051319A594B3005EE9A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSCocoaLumberjackHelperExample.app/YSCocoaLumberjackHelperExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YSCocoaLumberjackHelperExampleTests/YSCocoaLumberjackHelperExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B892051419A594B3005EE9A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSCocoaLumberjackHelperExample.app/YSCocoaLumberjackHelperExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCocoaLumberjackHelperExample/YSCocoaLumberjackHelperExample-Prefix.pch";
+				INFOPLIST_FILE = "YSCocoaLumberjackHelperExampleTests/YSCocoaLumberjackHelperExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B89204D819A594B3005EE9A5 /* Build configuration list for PBXProject "YSCocoaLumberjackHelperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B892050D19A594B3005EE9A5 /* Debug */,
+				B892050E19A594B3005EE9A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B892050F19A594B3005EE9A5 /* Build configuration list for PBXNativeTarget "YSCocoaLumberjackHelperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B892051019A594B3005EE9A5 /* Debug */,
+				B892051119A594B3005EE9A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B892051219A594B3005EE9A5 /* Build configuration list for PBXNativeTarget "YSCocoaLumberjackHelperExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B892051319A594B3005EE9A5 /* Debug */,
+				B892051419A594B3005EE9A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B89204D519A594B3005EE9A5 /* Project object */;
+}

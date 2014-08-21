@@ -1,0 +1,30 @@
+PODS:
+  - CocoaLumberjack (2.0.0-beta):
+    - CocoaLumberjack/CLI
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/CLI (2.0.0-beta):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Core (2.0.0-beta)
+  - CocoaLumberjack/Extensions (2.0.0-beta):
+    - CocoaLumberjack/Core
+  - LumberjackConsole (2.1.0):
+    - CocoaLumberjack (>= 2.0.0-beta)
+    - NBUCore (>= 2.0.2)
+  - NBUCore (2.0.2)
+  - NBULog (1.1.0):
+    - CocoaLumberjack (>= 2.0.0-beta)
+    - NBUCore (>= 2.0.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - LumberjackConsole
+  - NBULog
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: aadc76d7bd6c839ca84b38ed50cbf89d7cf8c693
+  LumberjackConsole: d3f161cfebc1a3a0f9c4d8d731f0ca0dccc5d8ab
+  NBUCore: 040cd60a1407bffd3dd6141b2b467125fe1631fa
+  NBULog: 5b3e90b25bf3109c09c47f4636c55869f45ea19e
+
+COCOAPODS: 0.33.1

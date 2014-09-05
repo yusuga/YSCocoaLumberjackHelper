@@ -14,6 +14,10 @@
 /**
  Add to .pch
  
+ #import <YSCocoaLumberjackHelper/YSCocoaLumberjackHelper.h>
+ 
+ and
+ 
  #ifdef DEBUG
  static const int ddLogLevel = LOG_LEVEL_VERBOSE;
  #else
@@ -42,6 +46,8 @@
     [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:LOG_FLAG_WARN];
     [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:LOG_FLAG_INFO];
     [logger setForegroundColor:[UIColor greenColor] backgroundColor:nil forFlag:LOG_FLAG_DEBUG];
+    
+    DDLogDebug(@"%s", __func__);
 }
 
 + (void)showLumberjackConsole

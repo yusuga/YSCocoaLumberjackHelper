@@ -12,6 +12,24 @@
 /**
  https://github.com/CocoaLumberjack/CocoaLumberjack
  https://github.com/CocoaLumberjack/CocoaLumberjack/wiki/XcodeColors
+ 
+ 
+ Add to .pch
+ 
+ #import <YSCocoaLumberjackHelper/YSCocoaLumberjackHelper.h>
+ 
+ and
+ 
+ #ifdef DEBUG
+ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+ #else
+ static const int ddLogLevel = LOG_LEVEL_ERROR;
+ #endif
+ 
+ and scheme setting
+ 
+ Add a new Environment Variable named "XcodeColors", with a value of "YES"
+ https://github.com/CocoaLumberjack/CocoaLumberjack/wiki/XcodeColors#xcodecolors-and-ios
  */
 
 @interface YSCocoaLumberjackHelper : NSObject

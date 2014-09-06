@@ -11,24 +11,6 @@
 
 @implementation YSCocoaLumberjackHelper
 
-/**
- Add to .pch
- 
- #import <YSCocoaLumberjackHelper/YSCocoaLumberjackHelper.h>
- 
- and
- 
- #ifdef DEBUG
- static const int ddLogLevel = LOG_LEVEL_VERBOSE;
- #else
- static const int ddLogLevel = LOG_LEVEL_ERROR;
- #endif
- 
- and scheme setting
- https://github.com/CocoaLumberjack/CocoaLumberjack/wiki/XcodeColors#xcodecolors-and-ios
- 
- */
-
 + (void)launchLogger
 {    
     // Standard lumberjack initialization

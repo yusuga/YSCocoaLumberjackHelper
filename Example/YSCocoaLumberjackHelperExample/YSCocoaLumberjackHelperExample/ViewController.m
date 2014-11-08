@@ -18,11 +18,11 @@
 {
     [super viewDidLoad];
     
-    DDLogError(@"Critical: Red color");
-    DDLogWarn(@"Error: Yellow color");
-    DDLogInfo(@"Warning: Yellow color");
-    DDLogDebug(@"Notice: Green color");
-    DDLogVerbose(@"Notice: Default color");
+    DDLogError(@"Error: Red color");
+    DDLogWarn(@"Warning: Yellow color");
+    DDLogInfo(@"Info: Dark gray color");
+    DDLogDebug(@"Success: Green color");
+    DDLogVerbose(@"Log: Default color");
 }
 
 - (void)didReceiveMemoryWarning

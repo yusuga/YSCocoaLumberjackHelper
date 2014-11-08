@@ -12,7 +12,7 @@
 @implementation YSCocoaLumberjackHelper
 
 + (void)launchLogger
-{    
+{        
     // Standard lumberjack initialization
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
@@ -24,10 +24,10 @@
     // Enable colors https://github.com/robbiehanson/XcodeColors
     [logger setColorsEnabled:YES];
     
-    [logger setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:LOG_FLAG_ERROR];
-    [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:LOG_FLAG_WARN];
-    [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:LOG_FLAG_INFO];
-    [logger setForegroundColor:[UIColor greenColor] backgroundColor:nil forFlag:LOG_FLAG_DEBUG];    
+    [logger setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:DDLogFlagError];
+    [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:DDLogFlagWarning];
+    [logger setForegroundColor:[UIColor darkGrayColor] backgroundColor:nil forFlag:DDLogFlagInfo];
+    [logger setForegroundColor:[UIColor greenColor] backgroundColor:nil forFlag:DDLogFlagDebug];
 }
 
 + (void)showLumberjackConsole

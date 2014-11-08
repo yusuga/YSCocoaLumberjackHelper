@@ -18,12 +18,10 @@
  
  #import <YSCocoaLumberjackHelper/YSCocoaLumberjackHelper.h>
  
- and
- 
  #ifdef DEBUG
- static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
  #else
- static const int ddLogLevel = LOG_LEVEL_ERROR;
+ static const DDLogLevel ddLogLevel = DDLogLevelError;
  #endif
  
  and scheme setting

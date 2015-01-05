@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/YSCocoaLumberjackHelper/*.{h,m}'
   s.requires_arc = true 
   
-  s.dependency 'CocoaLumberjack'
+  s.dependency 'CocoaLumberjack', '~> 2.0.0-rc'
   s.dependency 'LumberjackConsole'
   s.dependency 'NBULog'
 end

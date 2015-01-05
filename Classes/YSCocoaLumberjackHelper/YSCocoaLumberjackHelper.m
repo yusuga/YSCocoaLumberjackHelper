@@ -12,28 +12,25 @@
 @implementation YSCocoaLumberjackHelper
 
 + (void)launchLogger
-{        
+{
     // Standard lumberjack initialization
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    
-    // Sends log statements to Apple System Logger, so they show up on Console.app
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    
     DDTTYLogger *logger = [DDTTYLogger sharedInstance];
     
-    // Enable colors https://github.com/robbiehanson/XcodeColors
-    [logger setColorsEnabled:YES];
+    [DDLog addLogger:logger];
+    [logger setColorsEnabled:YES]; // Enable colors https://github.com/robbiehanson/XcodeColors
     
     [logger setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:DDLogFlagError];
     [logger setForegroundColor:[UIColor yellowColor] backgroundColor:nil forFlag:DDLogFlagWarning];
     [logger setForegroundColor:[UIColor darkGrayColor] backgroundColor:nil forFlag:DDLogFlagInfo];
     [logger setForegroundColor:[UIColor greenColor] backgroundColor:nil forFlag:DDLogFlagDebug];
+    
+    // Sends log statements to Apple System Logger, so they show up on Console.app
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
 }
 
 + (void)showLumberjackConsole
 {
-    // https://github.com/PTEz/LumberjackConsole
-    
+    // https://github.com/PTEz/LumberjackConsole    
     [PTEDashboard.sharedDashboard show];
 }
 

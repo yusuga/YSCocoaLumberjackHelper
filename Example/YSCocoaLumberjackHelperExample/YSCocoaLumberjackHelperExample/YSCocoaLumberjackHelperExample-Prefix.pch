@@ -13,9 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import "YSCocoaLumberjackHelper.h"
 #endif
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #ifdef DEBUG
     static DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else

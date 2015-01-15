@@ -35,6 +35,14 @@
  #import <YSCocoaLumberjackHelper/YSCocoaLumberjackHelper.h>
  [YSCocoaLumberjackHelper launchLogger];
  
+ Optional:
+ Force synchronous logging
+ 
+ #if defined(LOG_ASYNC_ENABLED)
+ #undef LOG_ASYNC_ENABLED
+ #define LOG_ASYNC_ENABLED NO
+ #endif
+ 
  */
 
 @interface YSCocoaLumberjackHelper : NSObject

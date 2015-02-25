@@ -24,11 +24,14 @@
     NSLog(@"%s <- __FUNCTION__", __FUNCTION__);
     NSLog(@"%s <- __PRETTY_FUNCTION__", __PRETTY_FUNCTION__);
     NSLog(@"%@ <- ys_func_str\n", ys_func_str(nil));
+    NSLog(@"---");
     ys_func_error(@" error");
     ys_func_warn(@" warn");
     ys_func_debug(@" debug");
     ys_func_info(@" info");
     ys_func_verbose(@" verbose");
+    NSLog(@"---");
+    ys_func_info(@" variadic %d, %f, %@", 3, 3.14f, @"π");
     NSLog(@"---");
 }
 

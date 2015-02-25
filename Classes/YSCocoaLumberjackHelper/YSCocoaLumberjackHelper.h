@@ -52,16 +52,16 @@
 
 @end
 
-#define ys_func_str(appendStr) ^NSString*(NSString *desc){\
+#define ys_func_str(frmt, ...) ^NSString*(){\
 NSMutableString *log = [NSString stringWithFormat:@"-[%@ %@](%d)", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__].mutableCopy;\
-if (appendStr) {\
-[log appendFormat:@"%@", appendStr];\
+if (frmt) {\
+[log appendFormat:frmt, ##__VA_ARGS__];\
 }\
 return [NSString stringWithString:log];\
-}(appendStr)
+}()
 
-#define ys_func_error(appendStr) DDLogError(@"%@", ys_func_str(appendStr))
-#define ys_func_warn(appendStr) DDLogWarn(@"%@", ys_func_str(appendStr))
-#define ys_func_debug(appendStr) DDLogDebug(@"%@", ys_func_str(appendStr))
-#define ys_func_info(appendStr) DDLogInfo(@"%@", ys_func_str(appendStr))
-#define ys_func_verbose(appendStr) DDLogVerbose(@"%@", ys_func_str(appendStr))
+#define ys_func_error(frmt, ...) DDLogError(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_warn(frmt, ...) DDLogWarn(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_debug(frmt, ...) DDLogDebug(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_info(frmt, ...) DDLogInfo(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_verbose(frmt, ...) DDLogVerbose(@"%@", ys_func_str(frmt, ##__VA_ARGS__))

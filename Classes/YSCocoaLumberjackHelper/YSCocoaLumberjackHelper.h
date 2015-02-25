@@ -51,3 +51,17 @@
 + (void)showLumberjackConsole;
 
 @end
+
+#define ys_func_str(appendStr) ^NSString*(NSString *desc){\
+NSMutableString *log = [NSString stringWithFormat:@"-[%@ %@](%d)", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__].mutableCopy;\
+if (appendStr) {\
+[log appendFormat:@"%@", appendStr];\
+}\
+return [NSString stringWithString:log];\
+}(appendStr)
+
+#define ys_func_error(appendStr) DDLogError(@"%@", ys_func_str(appendStr))
+#define ys_func_warn(appendStr) DDLogWarn(@"%@", ys_func_str(appendStr))
+#define ys_func_debug(appendStr) DDLogDebug(@"%@", ys_func_str(appendStr))
+#define ys_func_info(appendStr) DDLogInfo(@"%@", ys_func_str(appendStr))
+#define ys_func_verbose(appendStr) DDLogVerbose(@"%@", ys_func_str(appendStr))

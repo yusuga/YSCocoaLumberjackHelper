@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "YSCocoaLumberjackHelper.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
+        [YSCocoaLumberjackHelper launchLogger];
+        [YSCocoaLumberjackHelper showLumberjackConsole];
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

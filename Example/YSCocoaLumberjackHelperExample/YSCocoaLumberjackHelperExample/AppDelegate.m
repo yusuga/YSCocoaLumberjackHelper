@@ -7,15 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "YSCocoaLumberjackHelper.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [YSCocoaLumberjackHelper launchLogger];
-    [YSCocoaLumberjackHelper showLumberjackConsole];
-    
+{    
     return YES;
 }
 							

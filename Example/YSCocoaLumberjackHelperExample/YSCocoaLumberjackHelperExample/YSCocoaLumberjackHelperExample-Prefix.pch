@@ -21,3 +21,8 @@
 #else
     static DDLogLevel ddLogLevel = DDLogLevelError;
 #endif
+
+#if defined(LOG_ASYNC_ENABLED)
+    #undef LOG_ASYNC_ENABLED
+    #define LOG_ASYNC_ENABLED NO
+#endif

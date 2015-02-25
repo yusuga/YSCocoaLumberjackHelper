@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YSCocoaLumberjackHelper.h"
 
 @interface ViewController ()
 
@@ -15,6 +16,21 @@
 @end
 
 @implementation ViewController
+
+- (void)awakeFromNib
+{
+    NSLog(@"---");
+    NSLog(@"%s <- __func__", __func__);
+    NSLog(@"%s <- __FUNCTION__", __FUNCTION__);
+    NSLog(@"%s <- __PRETTY_FUNCTION__", __PRETTY_FUNCTION__);
+    NSLog(@"%@ <- ys_func_str\n", ys_func_str(nil));
+    ys_func_error(@" error");
+    ys_func_warn(@" warn");
+    ys_func_debug(@" debug");
+    ys_func_info(@" info");
+    ys_func_verbose(@" verbose");
+    NSLog(@"---");
+}
 
 - (void)viewDidLoad
 {
@@ -82,6 +98,7 @@
     DDLogInfo(@"Info: Dark gray color");
     DDLogDebug(@"Success: Green color");
     DDLogVerbose(@"Log: Default color");
+    NSLog(@"---");
 }
 
 @end

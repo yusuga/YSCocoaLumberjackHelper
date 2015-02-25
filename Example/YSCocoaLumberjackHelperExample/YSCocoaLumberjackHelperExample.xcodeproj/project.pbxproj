@@ -23,6 +23,7 @@
 		B892050A19A594B3005EE9A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B892050819A594B3005EE9A5 /* InfoPlist.strings */; };
 		B892050C19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B892050B19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m */; };
 		B892051819A59613005EE9A5 /* YSCocoaLumberjackHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B892051719A59613005EE9A5 /* YSCocoaLumberjackHelper.m */; };
+		B8B126DA1A9E283900686638 /* InheritedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B126D91A9E283900686638 /* InheritedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		B892050B19A594B3005EE9A5 /* YSCocoaLumberjackHelperExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSCocoaLumberjackHelperExampleTests.m; sourceTree = "<group>"; };
 		B892051619A59613005EE9A5 /* YSCocoaLumberjackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCocoaLumberjackHelper.h; sourceTree = "<group>"; };
 		B892051719A59613005EE9A5 /* YSCocoaLumberjackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCocoaLumberjackHelper.m; sourceTree = "<group>"; };
+		B8B126D81A9E283900686638 /* InheritedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritedViewController.h; sourceTree = "<group>"; };
+		B8B126D91A9E283900686638 /* InheritedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				B89204F219A594B3005EE9A5 /* Main.storyboard */,
 				B89204F519A594B3005EE9A5 /* ViewController.h */,
 				B89204F619A594B3005EE9A5 /* ViewController.m */,
+				B8B126D81A9E283900686638 /* InheritedViewController.h */,
+				B8B126D91A9E283900686638 /* InheritedViewController.m */,
 				B89204F819A594B3005EE9A5 /* Images.xcassets */,
 				B89204E719A594B3005EE9A5 /* Supporting Files */,
 			);
@@ -308,6 +313,7 @@
 				B892051819A59613005EE9A5 /* YSCocoaLumberjackHelper.m in Sources */,
 				B89204F119A594B3005EE9A5 /* AppDelegate.m in Sources */,
 				B89204ED19A594B3005EE9A5 /* main.m in Sources */,
+				B8B126DA1A9E283900686638 /* InheritedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

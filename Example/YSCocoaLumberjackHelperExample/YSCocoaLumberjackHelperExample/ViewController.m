@@ -19,26 +19,40 @@
 
 - (void)awakeFromNib
 {
-    NSLog(@"---");
+    NSLog(@"=== Compare ===");
     NSLog(@"%s <- __func__", __func__);
     NSLog(@"%s <- __FUNCTION__", __FUNCTION__);
     NSLog(@"%s <- __PRETTY_FUNCTION__", __PRETTY_FUNCTION__);
     NSLog(@"%@ <- ys_func_str\n", ys_func_str(nil));
-    NSLog(@"---");
+    NSLog(@"=== ys_func ===");
     ys_func_error(@" error");
     ys_func_warn(@" warn");
     ys_func_debug(@" debug");
     ys_func_info(@" info");
     ys_func_verbose(@" verbose");
-    NSLog(@"---");
+    NSLog(@"=== variadic ===");
     ys_func_info(@" variadic %d, %f, %@", 3, 3.14f, @"π");
-    NSLog(@"---");
+    NSLog(@"=== prefix ===");
     ys_func_error_pre(@"prefix", nil);
     ys_func_warn_pre(@"prefix", nil);
     ys_func_debug_pre(@"prefix", nil);
     ys_func_info_pre(@"prefix", nil);
     ys_func_verbose_pre(@"prefix", nil);
-    NSLog(@"---");
+    NSLog(@"=== weakSelf ===");
+    __weak typeof(self) weakSelf = self;
+    NSLog(@"%@", ys_func_str_w(weakSelf, @"weakSelf"));
+    ys_func_error_w(weakSelf, @"weakSelf");
+    ys_func_warn_w(weakSelf, @"weakSelf");
+    ys_func_debug_w(weakSelf, @"weakSelf");
+    ys_func_info_w(weakSelf, @"weakSelf");
+    ys_func_verbose_w(weakSelf, @"weakSelf");
+    NSLog(@"=== weakSelf + prefix ===");
+    ys_func_error_pre_w(weakSelf, @"prefix", @"weakSelf");
+    ys_func_warn_pre_w(weakSelf, @"prefix", @"weakSelf");
+    ys_func_debug_pre_w(weakSelf, @"prefix", @"weakSelf");
+    ys_func_info_pre_w(weakSelf, @"prefix", @"weakSelf");
+    ys_func_verbose_pre_w(weakSelf, @"prefix", @"weakSelf");
+    NSLog(@"===");
 }
 
 - (void)viewDidLoad

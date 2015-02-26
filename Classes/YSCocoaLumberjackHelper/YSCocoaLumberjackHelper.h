@@ -53,7 +53,7 @@
 @end
 
 #define ys_func_str(frmt, ...) ^NSString*(){\
-NSMutableString *log = [NSString stringWithFormat:@"-[%@ %@](%d)", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__].mutableCopy;\
+NSMutableString *log = [NSString stringWithFormat:@"-[%@ %@](%p)(%d)", NSStringFromClass([self class]), NSStringFromSelector(_cmd), self, __LINE__].mutableCopy;\
 if (frmt) {\
 [log appendFormat:frmt, ##__VA_ARGS__];\
 }\

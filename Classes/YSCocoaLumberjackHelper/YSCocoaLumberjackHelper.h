@@ -61,7 +61,12 @@ return [NSString stringWithString:log];\
 }()
 
 #define ys_func_error(frmt, ...) DDLogError(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_error_pre(pre, frmt, ...) DDLogError(@"%@ %@", pre, ys_func_str(frmt, ##__VA_ARGS__))
 #define ys_func_warn(frmt, ...) DDLogWarn(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_warn_pre(pre, frmt, ...) DDLogWarn(@"%@ %@", pre, ys_func_str(frmt, ##__VA_ARGS__))
 #define ys_func_debug(frmt, ...) DDLogDebug(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_debug_pre(pre, frmt, ...) DDLogDebug(@"%@ %@", pre, ys_func_str(frmt, ##__VA_ARGS__))
 #define ys_func_info(frmt, ...) DDLogInfo(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_info_pre(pre, frmt, ...) DDLogInfo(@"%@ %@", pre, ys_func_str(frmt, ##__VA_ARGS__))
 #define ys_func_verbose(frmt, ...) DDLogVerbose(@"%@", ys_func_str(frmt, ##__VA_ARGS__))
+#define ys_func_verbose_pre(pre, frmt, ...) DDLogVerbose(@"%@ %@", pre, ys_func_str(frmt, ##__VA_ARGS__))

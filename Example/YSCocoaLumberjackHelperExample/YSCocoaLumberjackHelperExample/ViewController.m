@@ -33,6 +33,12 @@
     NSLog(@"---");
     ys_func_info(@" variadic %d, %f, %@", 3, 3.14f, @"π");
     NSLog(@"---");
+    ys_func_error_pre(@"prefix", nil);
+    ys_func_warn_pre(@"prefix", nil);
+    ys_func_debug_pre(@"prefix", nil);
+    ys_func_info_pre(@"prefix", nil);
+    ys_func_verbose_pre(@"prefix", nil);
+    NSLog(@"---");
 }
 
 - (void)viewDidLoad
